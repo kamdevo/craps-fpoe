@@ -69,8 +69,7 @@ public class GameController {
                 )
         );
 
-        game.setRoll(dice1Value + dice2Value);
-        // Aquí se llamará la lógica del juego (punto, ganados, perdidos) del modelo Game
+        game.play(dice1Value, dice2Value);
 
         showGameData();
     }
