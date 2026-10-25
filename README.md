@@ -1,2 +1,4 @@
-- Jhonathan Delgado
+- Juan Camilo Morales
+- Nicolas Palacios
+- Juan Camilo Pinzon
 - Alumnos de FPOE Gr80 2026-II
