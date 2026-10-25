@@ -1,5 +1,6 @@
 package com.example.crapsgame262.controllers;
 
+import com.example.crapsgame262.models.AlertBox;
 import com.example.crapsgame262.models.Dice;
 import com.example.crapsgame262.models.Game;
 import com.example.crapsgame262.models.Player;
@@ -72,6 +73,17 @@ public class GameController {
         game.play(dice1Value, dice2Value);
 
         showGameData();
+    }
+
+    @FXML
+    void onMouseClickedHelpButton(MouseEvent event) {
+        AlertBox alertBox = new AlertBox();
+        alertBox.showAlertBox(
+                "Craps Game - Instrucciones",
+                "¿Cómo se juega?",
+                "En el primer lanzamiento, si sacas 7 u 11 ganas; si sacas 2, 3 o 12 pierdes. "
+                        + "Cualquier otro número se vuelve tu Punto: sigue lanzando y ganas si sacas "
+                        + "el Punto antes que un 7; si sale 7 primero, pierdes.");
     }
 
     private void showGameData() {
